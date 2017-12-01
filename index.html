@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+    <div class="box">
+    	<div class="login">
+    		<h2>欢迎登陆</h2>
+    		<section>
+    			<label for="username">用户名</label>
+    			<input type="text" name="username" class="username" id="username" autofocus="true">
+    		</section>
+    		<section>
+    			<label for="password">密码</label>
+    			<input type="password" name="password" class="password" id="password">
+    		</section>
+    		<input type="submit" value="登陆"  class="submit" >
+    	</div>
+        <a href="gundong.html">top</a>
+        <a href="wenzi.html">一堆文字</a>
+    </div>
+    </body>
+    <script>
+    	var username=document.querySelector('.username');
+    	var password=document.querySelector('.password');
+    	var submit=document.querySelector('.submit');
+    	console.log(submit);
+    	submit.onclick=function(){
+	    	if(username.value.trim() ==  'admin' &&  password.value.trim() == '123456'){
+	    		alert('登陆成功');
+	    	}else{
+	    		location.assign('cuowu.html');
+	    	}
+	    
+	    }
+    </script>
+</html>

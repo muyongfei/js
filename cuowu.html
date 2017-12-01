@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="cuowu.css">
+    </head>
+    <body>
+     <div class="box">
+    	<div class="login">
+    		<h2>404</h2>
+    		<p><span>5</span>后返回登陆界面</p>
+    		<input type="button" value="返回登陆" onclick="tiao()" class="button">
+    	</div>
+    </div>
+    </body>
+    <script>
+    	var span=document.querySelector('span');
+    	var five=span.innerText;
+    	var a=4;
+    	var time=function(){
+    		
+    		var kai=setInterval(function(){
+    			span.innerText=a;
+    			a--;
+    			if(a<0){
+    				clearInterval(kai);
+    				location.assign('index.html');
+    			}
+    		},1000)
+    	}
+    	time();
+    	function tiao(){
+    		location.assign('index.html');
+    	}
+    </script>
+</html>

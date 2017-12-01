@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="gundong.css">
+    </head>
+    <style>
+    .top1{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        border-radius: 100px 100px 100px 100px;
+        font-size: 50px;
+        text-align: center;
+        line-height: 200px;
+        position: fixed;
+        right:0;
+        bottom:50px;
+        display: none;
+    }
+    .box{
+        width: 500px;
+        height:5000px;
+        border:2px solid red;
+        margin:0 auto;
+    }
+</style>
+    <body>
+   <a href="index.html">login</a>
+   <a href="wenzi.html">一堆文字</a>
+    <div class="box"></div>
+    <div class="top1">Top</div>
+    </body>
+    <script>
+      
+        var  vrr=document.querySelector('.top1');
+        window.onscroll = function(){
+            if(document.documentElement.scrollTop>2000){
+                vrr.style.display = 'block';
+            }else{
+                vrr.style.display = 'none';
+            }
+        };
+        top.onclick = function () {
+        window.scroll(0,0);
+        }
+       
+    </script>
+</html>

@@ -1,0 +1,14 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-style: "微软雅黑","宋体",sans-serif;
+	box-sizing: border-box;
+	outline: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+}
