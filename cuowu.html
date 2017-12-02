@@ -8,21 +8,21 @@
      <div class="box">
     	<div class="login">
     		<h2>404</h2>
-    		<p><span>5</span>后返回登陆界面</p>
+    		<p><span id="span">5</span>后返回登陆界面</p>
     		<input type="button" value="返回登陆" onclick="tiao()" class="button">
     	</div>
     </div>
     </body>
     <script>
-    	var span=document.querySelector('span');
-    	var five=span.innerText;
-    	var a=4;
+    	var span=document.querySelector('span')   ||  document.getElementById(span);
+    	// var five=span.innerText;
+    	// var a=4;
     	var time=function(){
     		
     		var kai=setInterval(function(){
-    			span.innerText=a;
-    			a--;
-    			if(a<0){
+    			span.innerText--;
+    			// a--;
+    			if(span.innerText<0){
     				clearInterval(kai);
     				location.assign('index.html');
     			}

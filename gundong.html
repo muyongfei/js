@@ -29,13 +29,13 @@
    <a href="index.html">login</a>
    <a href="wenzi.html">一堆文字</a>
     <div class="box"></div>
-    <div class="top1">Top</div>
+    <div class="top1" id="top1">Top</div>
     </body>
     <script>
-      
-        var  vrr=document.querySelector('.top1');
+        
+        var  vrr=document.querySelector('.top1') ||  document.getElementById(top1);
         window.onscroll = function(){
-            if(document.documentElement.scrollTop>2000){
+            if(document.documentElement.scrollTop>500 || document.body.scrollTop>500 || document.pageYOffset>500   ||   document.scrollY>500 ){
                 vrr.style.display = 'block';
             }else{
                 vrr.style.display = 'none';

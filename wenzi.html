@@ -671,13 +671,13 @@
     </div>
     </body>
     <script>
-    	var box=document.querySelector('.box');
-    	console.log(box);
+//    	var box=document.querySelector('.box')  ||  document.getElementById(box);
+//    	console.log(box);
     	function  huidiao(){
     		scrollBy(0, 20);
     	}
     	var a=true;
-    	let time=setInterval(huidiao,1000);
+    	var time=setInterval(huidiao,1000);
     	// var top=document.querySelector('#top');
     	
 	    	function dianji(){
@@ -685,13 +685,13 @@
                     
 	    			clearInterval(time)
 	    			a=false;
-                    alert('tingzhi');
+                    // alert('tingzhi');
 	    		
 	    		}else{
 
 	    			time=setInterval(huidiao,1000);
 	    			a=true;
-                    alert('kaishi');
+                    // alert('kaishi');
                     
 	    		}
 	    		
@@ -700,5 +700,5 @@
     	
     	
     </script>
-    	}
+    	
 </html>

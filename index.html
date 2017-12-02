@@ -17,16 +17,16 @@
     			<label for="password">密码</label>
     			<input type="password" name="password" class="password" id="password">
     		</section>
-    		<input type="submit" value="登陆"  class="submit" >
+    		<input type="submit" value="登陆"  class="submit" id="submit">
     	</div>
         <a href="gundong.html">top</a>
         <a href="wenzi.html">一堆文字</a>
     </div>
     </body>
     <script>
-    	var username=document.querySelector('.username');
-    	var password=document.querySelector('.password');
-    	var submit=document.querySelector('.submit');
+    	var username=document.querySelector('.username')  ||  document.getElementById(username);
+    	var password=document.querySelector('.password')  ||  document.getElementById(password);
+    	var submit=document.querySelector('.submit')    ||   document.getElementById(submit);
     	console.log(submit);
     	submit.onclick=function(){
 	    	if(username.value.trim() ==  'admin' &&  password.value.trim() == '123456'){
